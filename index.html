@@ -28,6 +28,13 @@
       z-index: 2;
     }
 
+    h2 {
+      font-size: 2rem;
+      color: #555;
+      margin-top: 0;
+      z-index: 2;
+    }
+
     p {
       font-size: 1.5rem;
       color: #555;
@@ -112,6 +119,79 @@
       transform: scale(1.1); /* Slight zoom effect on hover */
     }
 
+    /* Anime images */
+    .anime-image {
+      width: 250px;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: 3px solid #ffeb3b;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .anime-image:hover {
+      transform: scale(1.1);
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .profile-picture {
+        width: 150px;
+        height: 150px;
+      }
+
+      .anime-image {
+        width: 200px;
+        height: 200px;
+      }
+
+      .balloons {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .profile-picture {
+        width: 130px;
+        height: 130px;
+      }
+
+      .anime-image {
+        width: 180px;
+        height: 180px;
+      }
+
+      .balloons {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
